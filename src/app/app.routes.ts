@@ -3,11 +3,13 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
+    loadChildren: () =>
+      import('./pages/tabs/tabs.routes').then((m) => m.routes),
   },
   {
     path: 'tabs/tab2',
-    loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
+    loadChildren: () =>
+      import('./pages/tabs/tabs.routes').then((m) => m.routes),
   },
   // {
   //   path: 'walkthrough',
