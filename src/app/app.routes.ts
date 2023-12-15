@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { NotFoundPage } from './pages/not-found/not-found.page';
 
 export const routes: Routes = [
   {
@@ -11,91 +12,15 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./pages/auth/auth.module').then((m) => m.AuthModule),
   },
-  // {
-  //   path: 'walkthrough',
-  // },
-  // {
-  //   path: 'getting-started',
-  // },
-
-  // {
-  //   path: 'auth',
-  //   pathMatch: 'full',
-  // },
-  // {
-  //   path: 'auth/login',
-  // },
-  // {
-  //   path: 'auth/signup',
-  // },
-  // {
-  //   path: 'auth/forgot-password',
-  // },
-  // {
-  //   path: 'app',
-  // },
-  // {
-  //   path: 'contact-card',
-  // },
-  // {
-  //   path: 'forms-and-validations',
-  // },
-  // {
-  //   path: 'forms-filters',
-  // },
-  // {
-  //   path: 'page-not-found',
-  // },
-  // {
-  //   path: 'showcase',
-  // },
-  // {
-  //   path: 'firebase',
-  //   redirectTo: 'firebase/auth/sign-in',
-  //   pathMatch: 'full',
-  // },
-  // {
-  //   path: 'firebase/auth',
-  // },
-  // {
-  //   path: 'firebase/crud',
-  // },
-  // {
-  //   path: 'maps',
-  // },
-  // {
-  //   path: 'video-playlist',
-  // },
-  // {
-  //   path: '**',
-  //   redirectTo: 'page-not-found',
-  // },
-  // {
-  //   path: 'getting-started',
-  //   loadComponent: () =>
-  //     import('./getting-started/getting-started.page').then(
-  //       (m) => m.GettingStartedPage
-  //     ),
-  // },
-  // {
-  //   path: 'auth',
-  //   loadComponent: () => import('./auth/auth.page').then((m) => m.AuthPage),
-  // },
-  // {
-  //   path: 'login',
-  //   loadComponent: () =>
-  //     import('./auth/login/login.page').then((m) => m.LoginPage),
-  // },
-  // {
-  //   path: 'sign-up',
-  //   loadComponent: () =>
-  //     import('./auth/sign-up/sign-up.page').then((m) => m.SignUpPage),
-  // },
-  // {
-  //   path: 'forgot-password',
-  //   loadComponent: () =>
-  //     import('./auth/forgot-password/forgot-password.page').then(
-  //       (m) => m.ForgotPasswordPage
-  //     ),
-  // },
+  {
+    path: 'onboarding',
+    loadComponent: () =>
+      import('./pages/onboarding/onboarding.page').then(
+        (m) => m.OnboardingPage
+      ),
+  },
+  {
+    path: '**',
+    component: NotFoundPage,
+  },
 ];

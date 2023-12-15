@@ -1,38 +1,27 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import {
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-} from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../../../components/explore-container/explore-container.component';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
+  selector: 'app-onboarding',
   standalone: true,
-  imports: [
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    ExploreContainerComponent,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-  ],
+  imports: [IonicModule, CommonModule, FormsModule, RouterLink],
   template: `
     <ion-header [translucent]="true">
       <ion-toolbar>
-        <ion-title> Tab 1 </ion-title>
+        <ion-title>onboarding</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content [fullscreen]="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
+          <ion-title size="large">onboarding</ion-title>
         </ion-toolbar>
       </ion-header>
+
       <div
         style="display: flex; flex-direction: column; gap:10px; padding:10px"
       >
@@ -53,16 +42,13 @@ import { ExploreContainerComponent } from '../../../components/explore-container
       >
         <a routerLink="/onboarding" routerLinkActive="active">/onboarding</a>
       </div>
-
-      <app-explore-container name="Tab 1 page"></app-explore-container>
     </ion-content>
   `,
 })
-export class Tab1Page implements OnInit, OnDestroy {
+export class OnboardingPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  ngOnDestroy() {}
 
   ionViewWillEnter() {
     console.log('🚀 Tab1 ~ ionViewWillEnter');

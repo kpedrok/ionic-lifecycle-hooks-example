@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -16,6 +17,7 @@ import { ExploreContainerComponent } from '../../../components/explore-container
     IonTitle,
     IonContent,
     ExploreContainerComponent,
+    RouterLink,
   ],
   template: `
     <ion-header [translucent]="true">
@@ -30,37 +32,36 @@ import { ExploreContainerComponent } from '../../../components/explore-container
           <ion-title size="large">Tab 3</ion-title>
         </ion-toolbar>
       </ion-header>
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/auth/login" routerLinkActive="active">/auth/login</a>
+        <a routerLink="/auth/sign-up" routerLinkActive="/auth/sign-up"
+          >/auth/sign-up</a
+        >
+      </div>
 
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/tabs/tab1" routerLinkActive="active">/tabs/tab1</a>
+      </div>
       <app-explore-container name="Tab 3 page"></app-explore-container>
     </ion-content>
   `,
 })
 export class Tab3Page implements OnInit, OnDestroy {
-  constructor() {
-    console.log('🚀 Tab3 ~ constructor');
-  }
+  constructor() {}
 
-  ngOnInit() {
-    console.log('🚀 Tab3 ~ ngOnInit');
-  }
+  ngOnInit() {}
 
-  ngOnDestroy() {
-    console.log('🚀 Tab3 ~ ngOnDestroy');
-  }
+  ngOnDestroy() {}
 
   ionViewWillEnter() {
     console.log('🚀 Tab3 ~ ionViewWillEnter');
   }
 
-  ionViewDidEnter() {
-    console.log('🚀 Tab3 ~ ionViewDidEnter');
-  }
-
   ionViewWillLeave() {
     console.log('🚀 Tab3 ~ ionViewWillLeave');
-  }
-
-  ionViewDidLeave() {
-    console.log('🚀 Tab3 ~ ionViewDidLeave');
   }
 }
