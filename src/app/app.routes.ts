@@ -7,9 +7,9 @@ export const routes: Routes = [
       import('./pages/tabs/tabs.routes').then((m) => m.routes),
   },
   {
-    path: 'tabs/tab2',
+    path: 'auth',
     loadChildren: () =>
-      import('./pages/tabs/tabs.routes').then((m) => m.routes),
+      import('./pages/auth/auth.module').then((m) => m.AuthModule),
   },
   // {
   //   path: 'walkthrough',
@@ -17,9 +17,9 @@ export const routes: Routes = [
   // {
   //   path: 'getting-started',
   // },
+
   // {
   //   path: 'auth',
-  //   redirectTo: 'auth/login',
   //   pathMatch: 'full',
   // },
   // {
