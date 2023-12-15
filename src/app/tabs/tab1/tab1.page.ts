@@ -8,9 +8,6 @@ import {
 import { ExploreContainerComponent } from '../../explore-container/explore-container.component';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
   standalone: true,
   imports: [
     IonHeader,
@@ -19,32 +16,49 @@ import { ExploreContainerComponent } from '../../explore-container/explore-conta
     IonContent,
     ExploreContainerComponent,
   ],
+  template: `
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-title> Tab 1 </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [fullscreen]="true">
+      <ion-header collapse="condense">
+        <ion-toolbar>
+          <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <app-explore-container name="Tab 1 page"></app-explore-container>
+    </ion-content>
+  `,
 })
 export class Tab1Page implements OnInit, OnDestroy {
   constructor() {
-    console.log('🚀 Tab2 ~ constructor');
+    console.log('🚀 Tab1 ~ constructor');
   }
 
   ngOnInit() {
-    console.log('🚀 Tab2 ~ ngOnInit');
+    console.log('🚀 Tab1 ~ ngOnInit');
   }
   ngOnDestroy() {
-    console.log('🚀 Tab2 ~ ngOnDestroy');
+    console.log('🚀 Tab1 ~ ngOnDestroy');
   }
 
   ionViewWillEnter() {
-    console.log('🚀 Tab2 ~ ionViewWillEnter');
+    console.log('🚀 Tab1 ~ ionViewWillEnter');
   }
 
   ionViewDidEnter() {
-    console.log('🚀 Tab2 ~ ionViewDidEnter');
+    console.log('🚀 Tab1 ~ ionViewDidEnter');
   }
 
   ionViewWillLeave() {
-    console.log('🚀 Tab2 ~ ionViewWillLeave');
+    console.log('🚀 Tab1 ~ ionViewWillLeave');
   }
 
   ionViewDidLeave() {
-    console.log('🚀 Tab2 ~ ionViewDidLeave');
+    console.log('🚀 Tab1 ~ ionViewDidLeave');
   }
 }
