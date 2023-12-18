@@ -5,35 +5,40 @@ import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-onboarding',
+  selector: 'app-payment',
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule, RouterLink],
   template: `
     <ion-content [fullscreen]="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Onboarding</ion-title>
+          <ion-title size="large">Payment</ion-title>
         </ion-toolbar>
       </ion-header>
 
       <div
         style="display: flex; flex-direction: column; gap:10px; padding:10px"
       >
-        <a routerLink="/payment"> Payment</a>
+        <a routerLink="/onboarding"> Onboarding</a>
+
+        <div></div>
+
+        <a routerLink="/tabs"> Tabs</a>
+        <a routerLink="/tabs/tabs2"> Tabs/Tabs2</a>
       </div>
     </ion-content>
   `,
 })
-export class OnboardingPage implements OnInit {
+export class PaymentPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}
 
   ionViewWillEnter() {
-    console.log('🚀 Onboarding ~ ionViewWillEnter');
+    console.log('🚀 Payment ~ ionViewWillEnter');
   }
 
   ionViewWillLeave() {
-    console.log('🚀 Onboarding ~ ionViewWillLeave');
+    console.log('🚀 Payment ~ ionViewWillLeave');
   }
 }
