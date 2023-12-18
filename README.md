@@ -8,7 +8,8 @@ Discover the intricacies and nuances of Ionic's lifecycle hooks as they dynamica
 
 Additionally, explore the project's Figma design [(link to Figma)](https://www.figma.com/file/sDv9Qai0cXiN7DTH0AS1af/Ionic-LifeCycle-Hooks?type=whiteboard&node-id=0%3A1&t=23ly6px9cYu4iFEP-1) for a visual representation of the concepts covered in this repository.
 
-<img width="929" alt="Screenshot of Ionic Lifecycle Hooks and Navigation" src="https://github.com/kpedrok/ionic-poc/assets/43593052/165d204e-655b-4e01-86b5-b15ac081bd70">
+<img width="800" alt="image" src="https://github.com/kpedrok/ionic-lifecycle-hooks-example/assets/43593052/0861a307-8d5f-411f-a735-af357378fc33">
+
 
 Feel free to clone, explore, and expand upon this repository to deepen your understanding of Ionic lifecycle hooks and their interactions with route navigation. Your contributions and feedback are highly valued to enhance this learning resource further.
 
