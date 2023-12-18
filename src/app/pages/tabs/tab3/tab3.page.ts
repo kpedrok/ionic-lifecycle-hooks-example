@@ -46,6 +46,11 @@ import { ExploreContainerComponent } from '../../../components/explore-container
       >
         <a routerLink="/tabs/tab1" routerLinkActive="active">/tabs/tab1</a>
       </div>
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/onboarding" routerLinkActive="active">/onboarding</a>
+      </div>
       <app-explore-container name="Tab 3 page"></app-explore-container>
     </ion-content>
   `,

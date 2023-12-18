@@ -51,10 +51,10 @@ export class OnboardingPage implements OnInit {
   ngOnInit() {}
 
   ionViewWillEnter() {
-    console.log('🚀 Tab1 ~ ionViewWillEnter');
+    console.log('🚀 Onboarding ~ ionViewWillEnter');
   }
 
   ionViewWillLeave() {
-    console.log('🚀 Tab1 ~ ionViewWillLeave');
+    console.log('🚀 Onboarding ~ ionViewWillLeave');
   }
 }

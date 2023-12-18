@@ -36,6 +36,12 @@ import { IonicModule } from '@ionic/angular';
       >
         <a routerLink="/tabs/tab2" routerLinkActive="active">/tabs/tab2</a>
       </div>
+
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/onboarding" routerLinkActive="active">/onboarding</a>
+      </div>
     </ion-content>
   `,
 })
