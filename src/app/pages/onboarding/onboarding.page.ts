@@ -20,6 +20,9 @@ import { IonicModule } from '@ionic/angular';
         style="display: flex; flex-direction: column; gap:10px; padding:10px"
       >
         <a routerLink="/payment"> Payment</a>
+
+        <div></div>
+        <a routerLink="/auth/sign-up"> Auth/sign-up</a>
       </div>
     </ion-content>
   `,

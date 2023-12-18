@@ -31,6 +31,11 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./pages/auth/auth.module').then((m) => m.AuthModule),
   },
+
+  // {
+  //   path: 'auth/routes',
+  //   component: SignUpPage,
+  // },
   {
     path: '**',
     component: NotFoundPage,
