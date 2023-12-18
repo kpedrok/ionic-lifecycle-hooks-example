@@ -1,6 +1,6 @@
-Title: **Exploring Ionic Lifecycle Hooks and Route Navigation**
+## Exploring Ionic Lifecycle Hooks and Route Navigation
 
-Description:
+**Description:**
 
 Welcome to a practical guide showcasing the functionality of Ionic lifecycle hooks in tandem with route navigation. This repository serves as an educational resource to demonstrate how Ionic's lifecycle hooks interact with various navigation scenarios.
 
