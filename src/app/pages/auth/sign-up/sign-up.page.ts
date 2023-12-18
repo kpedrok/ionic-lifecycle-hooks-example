@@ -9,12 +9,6 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule, RouterLink],
   template: `
-    <ion-header [translucent]="true">
-      <ion-toolbar>
-        <ion-title>sign-up</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
     <ion-content [fullscreen]="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -25,22 +19,11 @@ import { IonicModule } from '@ionic/angular';
       <div
         style="display: flex; flex-direction: column; gap:10px; padding:10px"
       >
-        <a routerLink="/auth/login" routerLinkActive="active">/auth/login</a>
-        <a routerLink="/auth/sign-up" routerLinkActive="/auth/sign-up"
-          >/auth/sign-up</a
-        >
-      </div>
+        <a routerLink="/tabs/tab3"> Tabs/tab3</a>
 
-      <div
-        style="display: flex; flex-direction: column; gap:10px; padding:10px"
-      >
-        <a routerLink="/tabs/tab2" routerLinkActive="active">/tabs/tab2</a>
-      </div>
+        <div></div>
 
-      <div
-        style="display: flex; flex-direction: column; gap:10px; padding:10px"
-      >
-        <a routerLink="/onboarding" routerLinkActive="active">/onboarding</a>
+        <a routerLink="/onboarding"> Onboarding</a>
       </div>
     </ion-content>
   `,

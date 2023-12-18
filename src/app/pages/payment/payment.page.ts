@@ -24,7 +24,7 @@ import { IonicModule } from '@ionic/angular';
         <div></div>
 
         <a routerLink="/tabs"> Tabs</a>
-        <a routerLink="/tabs/tabs2"> Tabs/Tabs2</a>
+        <a routerLink="/tabs/tab1"> Tabs/Tab1</a>
       </div>
     </ion-content>
   `,

@@ -18,6 +18,14 @@ import {
           <ion-title size="large">Tab 3</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/auth/sign-up"> auth/sign-up</a>
+
+        <div></div>
+      </div>
     </ion-content>
   `,
 })

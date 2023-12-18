@@ -25,6 +25,18 @@ import {
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <div
+        style="display: flex; flex-direction: column; gap:10px; padding:10px"
+      >
+        <a routerLink="/payment"> Payment</a>
+
+        <div></div>
+
+        <a routerLink="/tabs/tab2"> Tabs/Tab2</a>
+
+        <div></div>
+      </div>
     </ion-content>
   `,
 })
