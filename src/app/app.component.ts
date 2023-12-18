@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 
 @Component({
@@ -8,5 +9,15 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
   imports: [IonApp, IonRouterOutlet],
 })
 export class AppComponent {
-  constructor() {}
+  animated = true; // Define animated property
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (this.router.url.includes('tabs-proposal/')) {
+        this.animated = false;
+      } else {
+        this.animated = true;
+      }
+    });
+  }
 }

@@ -26,6 +26,12 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./pages/tabs/tabs.routes').then((m) => m.routes),
   },
+
+  {
+    path: 'tabs-proposal',
+    loadChildren: () =>
+      import('./pages/tabs-proposal/tabs.routes').then((m) => m.routes),
+  },
   {
     path: 'auth',
     loadChildren: () =>
