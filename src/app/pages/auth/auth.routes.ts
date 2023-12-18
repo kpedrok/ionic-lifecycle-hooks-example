@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { LoginPage } from './login/login.page';
 import { SignUpPage } from './sign-up/sign-up.page';
 
@@ -14,8 +12,3 @@ export const routes: Routes = [
     component: SignUpPage,
   },
 ];
-
-@NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
-})
-export class AuthModule {}

@@ -19,11 +19,15 @@ import { IonicModule } from '@ionic/angular';
       <div
         style="display: flex; flex-direction: column; gap:10px; padding:10px"
       >
-        <a routerLink="/tabs/tab3"> Tabs/tab3</a>
+        <a routerLink="/tabs/tab3">Tabs/tab3</a>
 
         <div></div>
 
-        <a routerLink="/onboarding"> Onboarding</a>
+        <a routerLink="/onboarding">Onboarding</a>
+
+        <div></div>
+
+        <a routerLink="/payment">Payment</a>
       </div>
     </ion-content>
   `,
